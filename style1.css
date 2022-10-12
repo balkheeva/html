@@ -80,6 +80,12 @@ li {
 .card {
     margin-bottom: 20px;
     width: 100%;
+    transition: transform .4s;
+}
+
+.cart:hover {
+    transform: scale(1.05);
+    transform-origin: 50% 50%;
 }
 
 .picture {
