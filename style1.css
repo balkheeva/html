@@ -17,6 +17,7 @@ li {
     top: 0px;
     max-width: 100%;
     background-color: white;
+    z-index: 1;
 }
 
 .navi_content {
