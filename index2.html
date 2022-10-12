@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Pushkin</title>
+</head>
+
+<body>
+
+    <section class="navi">
+        <div class="navi_content container">
+            <a href="#">
+                <div class="logo">
+                    <img src="./images/header/logo.svg">
+                </div>
+            </a>
+            <div class="actions">
+
+                <a href="#">
+                    <div class="button">
+                        <span>Войти</span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="cart">
+                        <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="basket">
+                                <path id="Rectangle-10" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9474 6.85876H0V18.6482C0 20.8574 1.79086 22.6482 4 22.6482H14.9474C17.1565 22.6482 18.9474 20.8574 18.9474 18.6482V6.85876ZM4 21.1482C2.61929 21.1482 1.5 20.029 1.5 18.6482V8.35876H17.4474V18.6482C17.4474 20.029 16.3281 21.1482 14.9474 21.1482H4Z"
+                                    fill="#262626" />
+                                <path id="Rectangle-3"
+                                    d="M6.01315 12.06V5.86806C6.01315 3.95686 7.56248 2.40753 9.47368 2.40753C11.3849 2.40753 12.9342 3.95686 12.9342 5.86806V12.06C12.9342 12.4742 13.27 12.81 13.6842 12.81C14.0984 12.81 14.4342 12.4742 14.4342 12.06V5.86806C14.4342 3.12844 12.2133 0.907532 9.47368 0.907532C6.73406 0.907532 4.51315 3.12844 4.51315 5.86806V12.06C4.51315 12.4742 4.84894 12.81 5.26315 12.81C5.67737 12.81 6.01315 12.4742 6.01315 12.06Z"
+                                    fill="#262626" />
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <!-- <picture>
+            <source media="(min-width:1120px)" srcset="./images/restaurant/s-header.jpg">
+            <source media="(min-width:768px)" srcset="./images/restaurant/s-header.jpg">
+            <img src="./images/restaurant/s-header-xs.jpg" alt="Flowers" style="width:100%;">
+        </picture> -->
+        <div class="container">
+            <div class="row">
+                <div class="text_block">
+                    <p class="name">Трактир «Пушкин»</p>
+                    <div class="subline_text_block">
+                        <p class="rest_category">₽₽₽ • Европейская</p>
+                        <p class="delivery_time">40-50 мин</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="menu">
+        <div class="menu_links container">
+            <ul class="row col-md-10 col-lg-8">
+                <li> <a href="#">Закуски</a> </li>
+                <li><a href="#">Салаты</a></li>
+                <li><a href="#">Супы</a></li>
+                <li><a href="#">Горячие блюда</a></li>
+                <li><a href="#">Гарниры</a></li>
+                <li><a href="#">Десерты</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="dishes container">
+        <p class="headline_text">Закуски</p>
+        <hr id="headline_underline">
+
+        <div class="dishes_cards row">
+            <div class="col-lg-6">
+                <div class="dish_single_card">
+                    <div class="dish_info col-xs-7 col-md-8 col-lg-4">
+                        <span class="dish_name">Сельдь на бородинском хлебе</span><br>
+                        <span class="dish_description">С яйцом и огурцом</span><br>
+                        <span class="price">240 ₽</span>
+                    </div>
+                    <img class="dish_image" src="images/restaurant/s1.jpg" alt="Сельдь на бородинском хлебе">
+                </div>
+            </div>
+
+
+            <div class="col-lg-6">
+                <div class="dish_single_card">
+                    <div class="dish_info col-xs-7 col-md-8 col-lg-4">
+                        <span class="dish_name">Соленья ассорти</span><br>
+                        <span class="price">320 ₽</span>
+                    </div>
+                    <img class="dish_image" src="images/restaurant/s2.jpg" alt="Сельдь на бородинском хлебе">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="dish_single_card ">
+                    <div class="dish_info col-xs-7 col-md-8 col-lg-4">
+                        <span class="dish_name">Грибы маринованные</span><br>
+                        <span class="price">290 ₽</span>
+                    </div>
+                    <img class="dish_image" src="images/restaurant/s3.jpg" alt="Сельдь на бородинском хлебе">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="dish_single_card ">
+                    <div class="dish_info col-xs-7 col-md-8 col-lg-4">
+                        <span class="dish_name">Сало домашнее с горчицей</span><br>
+                        <span class="price">320 ₽</span>
+                    </div>
+                    <img class="dish_image" src="images/restaurant/s4.jpg" alt="Сельдь на бородинском хлебе">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="dish_single_card ">
+                    <div class="dish_info col-xs-7 col-md-8 col-lg-4">
+                        <span class="dish_name">Малосольная семга</span><br>
+                        <span class="price">390 ₽</span>
+                    </div>
+                    <img class="dish_image" src="images/restaurant/s5.jpg" alt="Сельдь на бородинском хлебе">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="dish_single_card ">
+                    <div class="dish_info col-xs-7 col-md-8 col-lg-4">
+                        <span class="dish_name">Язык говяжий с хреном</span><br>
+                        <span class="price">350 ₽</span>
+                    </div>
+                    <img class="dish_image" src="images/restaurant/s6.jpg" alt="Сельдь на бородинском хлебе">
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer_content container">
+            <img src="images/footer/white-logo.svg">
+            <hr class="container">
+
+            <div class="footer-links row">
+                <div class="footer-link__first col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="footer-lang">
+                        <select class="footer-lang__list">
+                            <option value="1">🌎 Русский</option>
+                            <option value="2">🌎 Український</option>
+                            <option value="3">🌎 English</option>
+                        </select>
+                    </div>
+                    <div class="footer-hashtag">
+                        <p><span class="footer-hashtag__hash">#</span>UberEats</p>
+                    </div>
+                    <div class="footer-socialmedia__links">
+                        <a href="https://www.facebook.com/"><img class="footer-socialmedia__img" src="images/footer/facebook.svg" alt="facebook"></a>
+                        <a href="https://twitter.com/"><img class="footer-socialmedia__img" src="images/footer/twitter.svg" alt="twitter"></a>
+                        <a href="https://www.instagram.com/"><img class="footer-socialmedia__img" src="images/footer/instagram.svg" alt="instagram"></a>
+                    </div>
+                </div>
+                <div class="footer-link__second col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <a class="footer-link__single" href="index2.html">Об UberEats</a>
+                    <a class="footer-link__single" href="index2.html">Станьте партнёром по доставке</a>
+                    <a class="footer-link__single" href="index2.html">Станьте партнёром-рестораном</a>
+                </div>
+                <div class="footer-link__third col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <a class="footer-link__single" href="index2.html">Все города</a>
+                    <a class="footer-link__single" href="index2.html">Цены</a>
+                    <a class="footer-link__single" href="index2.html">Помощь</a>
+                    <a class="footer-link__single" href="index2.html">FAQs</a>
+                </div>
+            </div>
+
+            <hr class="container">
+            <div class="mobile_stores">
+                <img src="images/footer/get_it_on_appstore.png">
+                <img src="images/footer/get_it_on_google.png">
+            </div>
+
+            <hr class="container">
+
+            <div class="footer-credits row">
+                <a class="col-xs-12 col-sm-12 col-md-3 col-lg-3" href="#">© 2022 Uber Technologies Inc.</a>
+                <a class="col-xs-12 col-sm-12 col-md-3 col-lg-3" href="#">Обработка персональных данных</a>
+                <a class="col-xs-12 col-sm-12 col-md-3 col-lg-3" href="#">Пользовательское соглашение</a>
+            </div>
+        </div>
+
+    </section>
+
+    <button onclick="topFunction()" id="button_scroll" title="Go to top">
+                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow">
+                        <path id="Shape" d="M8.01832 0.0428432L8.05269 0.0102539L15.6741 7.25758L14.0755 8.70713L8.92858 3.88391V25H7.14287V3.85222L1.96207 8.70713L0.399567 7.25758L8.00314 0.0102539L8.01876 0.0428432H8.01832Z" fill="white"/>
+                        </g>
+                        </svg>
+                        
+
+        </button>
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("button_scroll");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+</body>
+
+</html>
