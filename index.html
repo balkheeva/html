@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <section class="navi">
+    <section class="navi" id="navi">
         <div class="navi_content container">
             <a href="#">
                 <div class="logo">
@@ -52,12 +52,14 @@
         <input type="search" name="search-input-main" id="search-input-main" placeholder="Поиск по ресторанам и кухням">
     </section>
 
+
     <section class="restraunts container">
         <h2>Рестораны в Москве</h2>
 
         <div class="cards row">
 
-            <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
+
+            <a href="#" class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="picture">
                     <img src="images/stores/1.jpg">
                 </div>
@@ -70,9 +72,9 @@
                 <div class="rest_time">
                     <p>25 - 35 мин</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <a href="#" class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="picture">
                     <img src="images/stores/2.jpg">
                 </div>
@@ -85,9 +87,9 @@
                 <div class="rest_time">
                     <p>40 - 50 мин</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <a href="#" class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="picture">
                     <img src="images/stores/3.jpg">
                 </div>
@@ -100,9 +102,9 @@
                 <div class="rest_time">
                     <p>35 - 45 мин</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <a href="#" class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="picture">
                     <img src="images/stores/4.jpg">
                 </div>
@@ -115,9 +117,9 @@
                 <div class="rest_time">
                     <p>30 - 40 мин</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <a href="#" class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="picture">
                     <img src="images/stores/5.jpg">
                 </div>
@@ -130,9 +132,9 @@
                 <div class="rest_time">
                     <p>40 - 50 мин</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <a href="#" class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="picture">
                     <img src="images/stores/6.jpg">
                 </div>
@@ -145,9 +147,9 @@
                 <div class="rest_time">
                     <p>25 - 35 мин</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <a href="#" class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="picture">
                     <img src="images/stores/7.jpg">
                 </div>
@@ -160,9 +162,9 @@
                 <div class="rest_time">
                     <p>15 - 25 мин</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <a href="#" class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="picture">
                     <img src="images/stores/8.jpg">
                 </div>
@@ -175,10 +177,10 @@
                 <div class="rest_time">
                     <p>25 - 35 мин</p>
                 </div>
-            </div>
+            </a>
 
 
-            <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <a href="#" class="card col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="picture">
                     <img src="images/stores/9.jpg">
                 </div>
@@ -191,8 +193,8 @@
                 <div class="rest_time">
                     <p>30 - 40 мин</p>
                 </div>
-            </div>
         </div>
+        </a>
 
 
     </section>
@@ -202,8 +204,8 @@
             <img src="images/footer/white-logo.svg">
             <hr class="container">
 
-            <div class="footer-links">
-                <div class="footer-link__first">
+            <div class="footer-links row">
+                <div class="footer-link__first col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <div class="footer-lang">
                         <select class="footer-lang__list">
                             <option value="1">🌎 Русский</option>
@@ -220,12 +222,12 @@
                         <a href="https://www.instagram.com/"><img class="footer-socialmedia__img" src="images/footer/instagram.svg" alt="instagram"></a>
                     </div>
                 </div>
-                <div class="footer-link__second">
+                <div class="footer-link__second col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <a class="footer-link__single" href="index2.html">Об UberEats</a>
                     <a class="footer-link__single" href="index2.html">Станьте партнёром по доставке</a>
                     <a class="footer-link__single" href="index2.html">Станьте партнёром-рестораном</a>
                 </div>
-                <div class="footer-link__third">
+                <div class="footer-link__third col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <a class="footer-link__single" href="index2.html">Все города</a>
                     <a class="footer-link__single" href="index2.html">Цены</a>
                     <a class="footer-link__single" href="index2.html">Помощь</a>
@@ -241,13 +243,47 @@
 
             <hr class="container">
 
-            <div class="footer-credits">
-                <a href="#">© 2022 Uber Technologies Inc.</a>
-                <a href="#">Обработка персональных данных</a>
-                <a href="#">Пользовательское соглашение</a>
+            <div class="footer-credits row">
+                <a class="col-xs-12 col-sm-12 col-md-3 col-lg-3" href="#">© 2022 Uber Technologies Inc.</a>
+                <a class="col-xs-12 col-sm-12 col-md-3 col-lg-3" href="#">Обработка персональных данных</a>
+                <a class="col-xs-12 col-sm-12 col-md-3 col-lg-3" href="#">Пользовательское соглашение</a>
             </div>
         </div>
+
     </section>
+
+    <button onclick="topFunction()" id="button_scroll" title="Go to top">
+                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="arrow">
+                        <path id="Shape" d="M8.01832 0.0428432L8.05269 0.0102539L15.6741 7.25758L14.0755 8.70713L8.92858 3.88391V25H7.14287V3.85222L1.96207 8.70713L0.399567 7.25758L8.00314 0.0102539L8.01876 0.0428432H8.01832Z" fill="white"/>
+                        </g>
+                        </svg>
+                        
+
+        </button>
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("button_scroll");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 
 </body>
 
