@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1920px;
+}
+
+.main_kv {
+    background: url("https://fs.getcourse.ru/fileservice/file/download/a/577320/sc/134/h/b2a6ecacd0765706802cc2a0873385a6.png") center;
+    width: 100%;
+    display: flex;
+    height: 816px;
+    position: relative;
+    align-items: center;
+}
+
+.second_layer_kv {
+    position: absolute;
+    margin-block-start: 103px;
+}
+
+.third_layer_kv {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.headline_text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    color: #000000;
+    margin: 0;
+}
+
+.subline_text {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#upper_text {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.description_text {
+    font-weight: 400;
+    font-size: 16px;
+    width: 50%;
+}
+
+.icons {
+    display: flex;
+    width: 50%;
+}
+
+.single_icon {
+    flex: 0 0 33.333333%;
+    font-size: 14px;
+}
+
+.single_icon p {
+    display: block;
+    width: 8vw;
+}
+
+.button_cta {
+    width: 550px;
+    padding: 35px 50px;
+    background: linear-gradient(90deg, #E78496 0%, #DA3D5A 100%);
+    /* stroke */
+    border: 1px solid rgba(254, 163, 180, 0.6);
+    /* btn */
+    box-shadow: 0px 20px 30px rgba(218, 61, 90, 0.5);
+    border-radius: 10px;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 3%;
+    text-align: center;
+    transition: background-color 1s ease-out;
+}
+
+.button_cta:hover {
+    background: linear-gradient(120deg, #ffb1c1 0%, #bb1b38 100%);
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button_cta:focus {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.name_text {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.61);
+    border: 0.79703px solid rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(11.9554px);
+    border-radius: 7.9703px;
+    right: 277px;
+    bottom: 5%;
+    padding: 0 2%;
+}
+
+.name_text_content {
+    display: flex;
+    flex-direction: column;
+    height: 148px;
+    justify-content: space-evenly;
+}
+
+.name_text__headline {
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 100%;
+    text-align: center;
+    color: #85796E;
+}
+
+.name_text__subline {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    /* or 17px */
+    text-align: center;
+    color: #85796E;
+}
+
+.courses {
+    margin-top: 103px;
+}
+
+.cards {
+    display: flex;
+    margin-top: 26px;
+}
+
+.cards__single_card {
+    margin-block-end: 42px;
+}
+
+.single_card__info {
+    background: #F5F1ED;
+    border-radius: 10px;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.courses__headline_text {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 64px;
+    color: #000000;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.courses__description_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    text-align: center;
+    color: #000000;
+}
+
+.single_card__number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 110%;
+    /* or 57px */
+    color: #ED5470;
+    margin: 0;
+}
+
+.single_card__headline_text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 33px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.single_card__price_course {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    text-decoration-line: line-through;
+    color: #939393;
+    margin: 0;
+}
+
+.single_card__description_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.single_card__lessons {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.single_card__info_text {
+    padding: 20px;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px!important;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+.buy__headline_text,
+.buy__counter {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    /* or 64px */
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+}
+
+#pink_text,
+.buy__counter {
+    margin: 0;
+    color: #DA3D5A
+}
+
+.buy__subline_text {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #927154;
+}
+
+.buy__counter_text {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 110%;
+    /* identical to box height, or 29px */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #AFAEAE;
+}
+
+.tinkoff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F8F8F8;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 33px;
+    width: 800px;
+}
+
+.tinkoff__logo {
+    width: 69px;
+    margin-bottom: 23px;
+}
+
+.tinkoff__headline_text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.tinkoff__description_text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    /* or 22px */
+    text-align: center;
+    color: #747474;
+    margin: 0;
+}
+
+.regi_form {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.regi_form .button_cta {
+    margin: auto;
+    margin-block-start: 20px;
+}
+
+input[type=text],
+input[type=tel],
+select {
+    width: 100%;
+    padding: 27px 20px;
+    margin: 15px 0 0 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    background: #F2F2F2;
+    border-radius: 10px;
+    text-align: center;
+    color: #878787;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url("./fonts/ofont.ru_Bebas\ Neue.ttf") format("truetype");
+}
+
+@media screen and (max-width: 768px) {
+    .main_kv {
+        background: #F2F2F2;
+        height: auto;
+        padding: 30px 15px;
+    }
+    .content,
+    .buy {
+        text-align: center;
+    }
+    .second_layer_kv,
+    .third_layer_kv,
+    .name_text {
+        display: none
+    }
+    .description_text,
+    .icons,
+    .single_card__image,
+    .regi_form,
+    .tinkoff {
+        width: 100%;
+    }
+    .button_cta {
+        width: 50%;
+        font-size: 12px;
+        padding: 10px 50px;
+        margin: 15px auto;
+    }
+    .single_icon {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 33.333333%;
+        font-size: 14px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .single_icon p {
+        width: auto;
+        text-align: center;
+        font-size: 10px;
+    }
+    .icons {
+        width: auto;
+        justify-content: center;
+    }
+    .courses {
+        margin-top: 60px;
+    }
+    .cards__single_card {
+        margin: 0;
+    }
+    .buy {
+        margin-top: 60px;
+    }
+    .buy__headline_text,
+    .buy__counter {
+        font-size: 48px;
+    }
+    .buy__subline_text,
+    .buy__counter_text {
+        font-size: 18px;
+    }
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+}
