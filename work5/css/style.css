@@ -5,7 +5,7 @@
 body {
     background-color: #f8faff;
     overflow-x: hidden;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 body, html {
@@ -64,12 +64,14 @@ body, html {
 .sidebar {
     background-color: white;
     height: 100vh;
-    margin-top: 28px;
 }
 
 .sidebar svg {
     margin-right: 22px;
     fill:#7d7d7d;
+}
+.sidebar img {
+    margin-top:28px;
 }
 
 .sidebar__nav {
@@ -85,6 +87,7 @@ body, html {
 .content {
     margin-top: 19px;
     margin-left: 59px;
+    margin-right: 59px;
 }
 
 .profileInfo {
@@ -184,7 +187,7 @@ body, html {
 .store-item + .store-item {
     border-top: 1px solid #f4f4f4;
 }
-.shrink {
-    width: 100px;
-    white-space: nowrap;
+.custom-grid {
+    display: grid;
+    grid-template-columns: 5% 20% 35% 40%;
 }

@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-utilities.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="container-xl container-xl__1440 ">
@@ -126,12 +129,15 @@
 
             </div>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-green-primary create-store-js" data-bs-toggle="modal" data-bs-target="#createStoreModal">Создать свой
-                магазин</button>
+            <button type="button" class="btn btn-green-primary create-store-js" data-bs-toggle="modal"
+                    data-bs-target="#createStoreModal">Создать свой
+                магазин
+            </button>
 
             <!-- Modal -->
             <div class="position-relative">
-                <div class="modal modal__createStore" id="createStoreModal" data-bs-backdrop="false" tabindex="-1" role="dialog"
+                <div class="modal modal__createStore" id="createStoreModal" data-bs-backdrop="false" tabindex="-1"
+                     role="dialog"
                      aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <form class="modal-dialog modal__createStore__dialog" role="document">
                         <div class="modal-content modal__createStore__content">
@@ -140,13 +146,15 @@
                                     <span class="new">Создать магазин</span>
                                     <span class="edit">Редактировать магазин</span>
                                 </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                             </div>
                             <div class="modal-body modal__createStore__body">
                                 <div class="selectArea d-flex justify-content-between">
                                     <div class="selectArea__template">
                                         <label for="template">Шаблон</label>
-                                        <select class="form-select select__createStore template-js" id="template" aria-label="Default select example">
+                                        <select class="form-select select__createStore template-js" id="template"
+                                                aria-label="Default select example">
                                             <option selected>Стандартный</option>
                                             <option value="one">One</option>
                                             <option value="two">Two</option>
@@ -156,7 +164,8 @@
 
                                     <div class="selectArea__colorScheme">
                                         <label for="theme">Цветовая схема</label>
-                                        <select class="form-select select__createStore theme-js" id="theme" aria-label="Default select example">
+                                        <select class="form-select select__createStore theme-js" id="theme"
+                                                aria-label="Default select example">
                                             <option selected>Классическая</option>
                                             <option value="one">One</option>
                                             <option value="two">Two</option>
@@ -185,12 +194,14 @@
                                 </div>
                                 <div class="tip d-flex justify-content-between align-items-center">
                                     <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="52" height="52">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="52"
+                                             height="52">
                                     <path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/>
                                             <path d="M26 10a1 1 0 0 0-1 1v22a1 1 0 1 0 2 0V11a1 1 0 0 0-1-1zM26 37a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-2a1 1 0 0 0-1-1z"/>
                                 </svg>
                                     </div>
-                                    <p>В названии домена разрешены латиница и “-”, запрещается использовать словосочетание
+                                    <p>В названии домена разрешены латиница и “-”, запрещается использовать
+                                        словосочетание
                                         Work 5. После создания магазина Вы сможете прикрутить свой домен (например
                                         ivangrozniy.ru). Подробнее по <a href="#">ссылке</a></p>
                                 </div>
@@ -198,7 +209,8 @@
 
                             </div>
                             <div class="modal-footer footer__createStore justify-content-start">
-                                <button type="button" class="btn btn-gray-secondary" data-bs-dismiss="modal">Отмена</button>
+                                <button type="button" class="btn btn-gray-secondary" data-bs-dismiss="modal">Отмена
+                                </button>
                                 <button type="submit" class="btn btn-green-primary addStoreBtn-js">
                                     <span class="new">Создать</span>
                                     <span class="edit">Сохранить</span>
@@ -213,7 +225,7 @@
             <div class="storeManager  bg-white">
                 <table class="table storeManager__table table-js ">
                     <thead>
-                    <tr>
+                    <tr class="custom-grid">
                         <th scope="col">№</th>
                         <th scope="col">Название</th>
                         <th scope="col">Адрес</th>
@@ -232,7 +244,7 @@
 </div>
 
 <template class="store-item-template">
-    <tr class="store-item align-middle">
+    <tr class="store-item align-middle custom-grid">
         <td class="store-item-id"></td>
         <td class="store-item-name"></td>
         <td class="store-item-domain"></td>
