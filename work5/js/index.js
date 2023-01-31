@@ -72,3 +72,44 @@ function createStore(data) {
     tabel.appendChild(storeItem)
 }
 
+function range(n1, n2, step) {
+    let arr = []
+    if (!step) step = 1
+    for (let i = n1; i <= n2; i += step) {
+        arr.push(i)
+    }
+    return arr
+}
+function sum(arr) {
+    return arr.reduce((acc, current) => acc + current, 0)
+}
+
+function arrayToList(arr) {
+    let list
+    for (let i = arr.length-1; i>=0; i--) {
+         list = {value: arr[i], rest: list}
+    }
+    return list
+}
+
+function listToArray(list) {
+    let array = [];
+    let node = list
+    while (node) {
+        array.push(node.value);
+        node = node.rest
+    }
+    return array;
+}
+function prepend(value, list) {
+    return {value, rest: list};
+}
+function nth(list, n) {
+    if (!list) return undefined;
+    else if (n == 0) return list.value;
+    else return nth(list.rest, n - 1);
+}
+
+console.log(arrayToList(range(1, 10, 3)))
+console.log(listToArray(arrayToList(range(1, 10, 3))))
+
